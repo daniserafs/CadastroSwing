@@ -96,7 +96,7 @@ public class TelaVacina extends javax.swing.JFrame {
                 .setModel(new javax.swing.table.DefaultTableModel(
                         new Object[][]{{null, null, null, null}, {null, null, null, null},
                         {null, null, null, null}, {null, null, null, null}},
-                        new String[]{"Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7"}));
+                        new String[]{"Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8"}));
         tabelaPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabelaPacientesMouseClicked(evt);
@@ -145,10 +145,10 @@ public class TelaVacina extends javax.swing.JFrame {
                                 .addGroup(layout.createSequentialGroup().addComponent(btnSalvar)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnExcluir))
-                                .addGroup(layout.createSequentialGroup().addComponent(lblNome).addGap(18, 18, 18)
+                                .addGroup(layout.createSequentialGroup().addComponent(lblNome).addGap(50, 50, 50)
                                         .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18).addComponent(lblCPF).addGap(18, 18, 18)
+                                        .addGap(18, 18, 18).addComponent(lblCPF).addGap(50, 50, 50)
                                         .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18).addComponent(lblRG).addGap(18, 18, 18)
@@ -160,7 +160,8 @@ public class TelaVacina extends javax.swing.JFrame {
                                 .addGroup(layout.createSequentialGroup().addComponent(lblSus).addGap(18, 18, 18)
                                         .addComponent(txtSus, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(8, 8, 8).addComponent(lblVacina).addGap(18, 18, 18)
+                                        .addGap(8, 8, 8)
+                                        .addComponent(lblVacina).addGap(18, 18, 18)
                                         .addComponent(txtVacina, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(8, 8, 8).addComponent(lblValidade).addGap(18, 18, 18)
@@ -168,18 +169,19 @@ public class TelaVacina extends javax.swing.JFrame {
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(lblLote).addGap(8,8,8)
                                 .addComponent(txtLote, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 800,
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 900,
                                         javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(133, Short.MAX_VALUE))
+                        .addContainerGap(45, Short.MAX_VALUE))
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)
-                        .addGap(20, 20, 20))
+                        .addGap(50, 50, 50))
+                
         );
         layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup().addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblNome).addGap(18, 18, 18)
+                                .addComponent(lblNome).addGap(35, 35, 35)
                                 .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE,
                                         javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(lblCPF).addGap(18, 18, 18)
@@ -209,9 +211,12 @@ public class TelaVacina extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        //.addComponent(jButton1)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE,
                                 javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(93, Short.MAX_VALUE)));
+                        .addContainerGap(93, Short.MAX_VALUE))
+                            
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
