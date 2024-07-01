@@ -50,6 +50,7 @@ public class PacienteSetDAO implements IPacienteDAO {
 					pacienteCadastrado.setVacina(paciente.getVacina());
 					pacienteCadastrado.setValidade(paciente.getValidade());
 					pacienteCadastrado.setLote(paciente.getLote());
+                                        pacienteCadastrado.setData(paciente.getData());
 					break;
 				}
 			}

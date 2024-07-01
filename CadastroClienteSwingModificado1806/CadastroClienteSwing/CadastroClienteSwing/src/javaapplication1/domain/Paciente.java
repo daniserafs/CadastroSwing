@@ -17,14 +17,18 @@ public class Paciente {
 	private String vacina;
 	private String validade;
 	private String lote;
+        private String data;
 
-	public Paciente(String nome, String cpf, String rg, String sus, String vacina,String validade, String lote) {
+	public Paciente(String nome, String cpf, String rg, String sus, String vacina,String validade, String lote, String data) {
 		this.nome = nome;
 		this.cpf = Long.valueOf(cpf);
 		this.rg = rg;
+                this.sus = sus;
 		this.vacina = vacina;
 		this.validade = validade;
 		this.lote = lote;
+                this.data = data;
+                
 
 	}
 	@Override
@@ -93,4 +97,18 @@ public class Paciente {
 	public void setLote(String lote) {
 		this.lote = lote;
 	}
+
+    /**
+     * @return the data
+     */
+    public String getData() {
+        return data;
+    }
+
+    /**
+     * @param data the data to set
+     */
+    public void setData(String data) {
+        this.data = data;
+    }
 }

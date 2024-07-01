@@ -43,6 +43,7 @@ public class PacienteMapDAO implements IPacienteDAO {
 		pacienteCadastrado.setSus(paciente.getSus());
 		pacienteCadastrado.setVacina(paciente.getVacina());
 		pacienteCadastrado.setLote(paciente.getLote());
+                pacienteCadastrado.setData(paciente.getData());
 
 	}
 

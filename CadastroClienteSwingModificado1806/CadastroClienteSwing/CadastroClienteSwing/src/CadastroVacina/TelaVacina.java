@@ -62,6 +62,8 @@ public class TelaVacina extends javax.swing.JFrame {
         txtValidade = new javax.swing.JTextField();
         lblLote = new javax.swing.JLabel();
         txtLote = new javax.swing.JTextField();
+        lblData = new javax.swing.JLabel();
+        txtData = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelaPacientes = new javax.swing.JTable();
         btnExcluir = new javax.swing.JButton();
@@ -79,6 +81,7 @@ public class TelaVacina extends javax.swing.JFrame {
         lblVacina.setText("Vacina Aplicada:");
         lblValidade.setText("Validade:");
         lblLote.setText("Lote:");
+        lblData.setText("Data:");
 
         btnSalvar.setText("Salvar");
         btnSalvar.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +96,7 @@ public class TelaVacina extends javax.swing.JFrame {
                 .setModel(new javax.swing.table.DefaultTableModel(
                         new Object[][]{{null, null, null, null}, {null, null, null, null},
                         {null, null, null, null}, {null, null, null, null}},
-                        new String[]{"Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6"}));
+                        new String[]{"Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7"}));
         tabelaPacientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabelaPacientesMouseClicked(evt);
@@ -143,31 +146,35 @@ public class TelaVacina extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(btnExcluir))
                                 .addGroup(layout.createSequentialGroup().addComponent(lblNome).addGap(18, 18, 18)
-                                        .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 262,
+                                        .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18).addComponent(lblCPF).addGap(18, 18, 18)
-                                        .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 230,
+                                        .addComponent(txtCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18).addComponent(lblRG).addGap(18, 18, 18)
-                                        .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 230,
+                                        .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18))
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lblData).addGap(18,18,18)
+                                        .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup().addComponent(lblSus).addGap(18, 18, 18)
-                                        .addComponent(txtSus, javax.swing.GroupLayout.PREFERRED_SIZE, 262,
+                                        .addComponent(txtSus, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(8, 8, 8).addComponent(lblVacina).addGap(18, 18, 18)
-                                        .addComponent(txtVacina, javax.swing.GroupLayout.PREFERRED_SIZE, 230,
+                                        .addComponent(txtVacina, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(8, 8, 8).addComponent(lblValidade).addGap(18, 18, 18)
-                                        .addComponent(txtValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 230,
-                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtValidade, javax.swing.GroupLayout.PREFERRED_SIZE, 150,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(lblLote).addGap(8,8,8)
+                                .addComponent(txtLote, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 800,
                                         javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(133, Short.MAX_VALUE))
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)
-                        .addGap(51, 51, 51))
+                        .addGap(20, 20, 20))
         );
         layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup().addGap(20, 20, 20)
@@ -181,7 +188,9 @@ public class TelaVacina extends javax.swing.JFrame {
                                 .addComponent(lblRG).addGap(18, 18, 18)
                                 .addComponent(txtRG, javax.swing.GroupLayout.PREFERRED_SIZE,
                                         javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
+                                .addGap(18, 18, 18)
+                                .addComponent(lblData).addGap(18,18,18)
+                                .addComponent(txtData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(lblSus).addGap(18, 18, 18)
                                 .addComponent(txtSus, javax.swing.GroupLayout.PREFERRED_SIZE,
@@ -192,7 +201,9 @@ public class TelaVacina extends javax.swing.JFrame {
                                 .addGap(18, 18, 18).addGap(18, 18, 18).addComponent(lblValidade).addGap(18, 18, 18)
                                 .addComponent(txtValidade, javax.swing.GroupLayout.PREFERRED_SIZE,
                                         javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
+                                .addGap(18, 18, 18)
+                                .addComponent(lblLote).addGap(8,8,8)
+                                .addComponent(txtLote, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(btnSalvar).addComponent(btnExcluir))
                         .addGap(38, 38, 38)
@@ -225,6 +236,7 @@ public class TelaVacina extends javax.swing.JFrame {
         String vacina = txtVacina.getText();
         String validade = txtValidade.getText();
         String lote = txtLote.getText();
+        String data = txtData.getText();
 
         if (!isCamposValidos(nome, cpf)) {
             JOptionPane.showMessageDialog(null, "Existem campos a serem preenchidos", "ATENÇÃO",
@@ -232,12 +244,12 @@ public class TelaVacina extends javax.swing.JFrame {
             return;
         }
 
-        Paciente paciente = new Paciente(nome, cpf, rg, sus, vacina, validade, lote);
+        Paciente paciente = new Paciente(nome, cpf, rg, sus, vacina, validade, lote, data);
         Boolean isCadastrado = this.pacienteDAO.cadastrar(paciente);
 
         if (isCadastrado) {
             modelo.addRow(new Object[]{paciente.getNome(), paciente.getCpf(), paciente.getRg(), paciente.getSus(),
-                paciente.getVacina(), paciente.getValidade(), paciente.getLote()});
+                paciente.getVacina(), paciente.getValidade(), paciente.getLote(), paciente.getData()});
             limparCampos();
         } else {
             JOptionPane.showMessageDialog(null, "Paciente já se encontra cadastrado", "ATENÇÃO",
@@ -259,6 +271,7 @@ public class TelaVacina extends javax.swing.JFrame {
         txtVacina.setText(paciente.getVacina());
         txtValidade.setText(paciente.getValidade());
         txtLote.setText(paciente.getLote());
+        txtData.setText(paciente.getData());
 
     }// GEN-LAST:event_tabelaPacientesMouseClicked
 
@@ -356,6 +369,8 @@ public class TelaVacina extends javax.swing.JFrame {
     private javax.swing.JTextField txtVacina;
     private javax.swing.JTextField txtValidade;
     private javax.swing.JTextField txtLote;
+    private javax.swing.JLabel lblData ;
+    private javax.swing.JTextField txtData;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 
@@ -376,6 +391,7 @@ public class TelaVacina extends javax.swing.JFrame {
         modelo.addColumn("Vacina Aplicada");
         modelo.addColumn("Validade");
         modelo.addColumn("Lote");
+        modelo.addColumn("Data");
 
         tabelaPacientes.setModel(modelo);
     }
@@ -388,6 +404,7 @@ public class TelaVacina extends javax.swing.JFrame {
         txtVacina.setText("");
         txtValidade.setText("");
         txtLote.setText("");
+        txtData.setText("");
     }
 
 }
