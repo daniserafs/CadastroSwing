@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package TelasFase;
+package telasaula;
 import cadastroclienteswing.TelaPrincipal;
 /**
  *
@@ -65,7 +65,7 @@ public class HomePage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TelasFase/logo-vacina-facil-4 (1).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/telasaula/logo-vacina-facil-4 (1).png"))); // NOI18N
 
         Entrar.setText("Entrar");
         Entrar.addActionListener(new java.awt.event.ActionListener() {

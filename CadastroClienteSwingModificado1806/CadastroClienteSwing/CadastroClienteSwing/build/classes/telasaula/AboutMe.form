@@ -135,7 +135,7 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/TelasFase/Imagem do WhatsApp de 2024-07-01 &#xe0;(s) 18.30.09_38c21271 (1).jpg"/>
+                  <Image iconType="3" name="/telasaula/Imagem do WhatsApp de 2024-07-01 &#xe0;(s) 18.30.09_38c21271 (1).jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
@@ -143,7 +143,7 @@
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/TelasFase/Imagem do WhatsApp de 2024-06-11 &#xe0;(s) 22.15.06_195d5086.jpg"/>
+                  <Image iconType="3" name="/telasaula/Imagem do WhatsApp de 2024-06-11 &#xe0;(s) 22.15.06_195d5086.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>

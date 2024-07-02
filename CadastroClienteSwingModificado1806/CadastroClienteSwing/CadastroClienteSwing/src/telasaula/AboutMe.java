@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package TelasFase;
+package telasaula;
 
 /**
  *
@@ -48,10 +48,10 @@ public class AboutMe extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TelasFase/Imagem do WhatsApp de 2024-07-01 à(s) 18.30.09_38c21271 (1).jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/telasaula/Imagem do WhatsApp de 2024-07-01 à(s) 18.30.09_38c21271 (1).jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TelasFase/Imagem do WhatsApp de 2024-06-11 à(s) 22.15.06_195d5086.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/telasaula/Imagem do WhatsApp de 2024-06-11 à(s) 22.15.06_195d5086.jpg"))); // NOI18N
         jLabel2.setText("jLabel1");
 
         jTextPane1.setText("Daniela Serafim Soares é um estudante de Ciência da Computação na UFT - Campus Palmas, tem 28 anos, graduado no ensino técnico em edificações do IFTO - Campus Palmas, é o fâ #1 do grupo Sul Coreano BTS e pode ser encontrado brincando com seus gatos em sua casa.");

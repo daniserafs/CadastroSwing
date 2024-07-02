@@ -1,4 +1,4 @@
-package CadastroVacina;
+package cadastrovacinaswing;
 
 import javaapplication1.dao.PacienteMapDAO;
 import javaapplication1.dao.IPacienteDAO;

@@ -13,8 +13,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-import CadastroVacina.TelaVacina;
-import TelasFase.HomePage;
+import cadastrovacinaswing.TelaVacina;
+import telasaula.HomePage;
 
 /**
  *

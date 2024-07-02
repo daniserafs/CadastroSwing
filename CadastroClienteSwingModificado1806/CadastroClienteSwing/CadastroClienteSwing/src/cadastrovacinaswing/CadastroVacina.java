@@ -1,6 +1,6 @@
-package CadastroVacina;
+package cadastrovacinaswing;
 
-import CadastroVacina.TelaVacina;
+import cadastrovacinaswing.TelaVacina;
 
 public class CadastroVacina {
 
