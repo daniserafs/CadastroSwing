@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CadastroClienteSwing",
+            "request": "launch",
+            "mainClass": "cadastroclienteswing.CadastroClienteSwing",
+            "projectName": "CadastroClienteSwing"
+        },
+        {
+            "type": "java",
+            "name": "TelaPrincipal",
+            "request": "launch",
+            "mainClass": "cadastroclienteswing.TelaPrincipal",
+            "projectName": "CadastroClienteSwing"
+        },
+        {
+            "type": "java",
+            "name": "CadastroVacina",
+            "request": "launch",
+            "mainClass": "cadastrovacinaswing.CadastroVacina",
+            "projectName": "CadastroClienteSwing"
+        },
+        {
+            "type": "java",
+            "name": "TelaVacina",
+            "request": "launch",
+            "mainClass": "cadastrovacinaswing.TelaVacina",
+            "projectName": "CadastroClienteSwing"
+        },
+        {
+            "type": "java",
+            "name": "AboutMe",
+            "request": "launch",
+            "mainClass": "telasaula.AboutMe",
+            "projectName": "CadastroClienteSwing"
+        },
+        {
+            "type": "java",
+            "name": "HomePage",
+            "request": "launch",
+            "mainClass": "telasaula.HomePage",
+            "projectName": "CadastroClienteSwing"
+        },
+        {
+            "type": "java",
+            "name": "UserTeste",
+            "request": "launch",
+            "mainClass": "usuarioroot.UserTeste",
+            "projectName": "CadastroClienteSwing"
+        }
+    ]
+}

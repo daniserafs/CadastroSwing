@@ -18,6 +18,7 @@ public class TelaVacina extends javax.swing.JFrame {
 
     private DefaultTableModel modelo = new DefaultTableModel();
     private IPacienteDAO pacienteDAO = new PacienteMapDAO();
+    // private User = new User();
     private static TelaPrincipal instancia;
 
     public static TelaPrincipal getInstancia() {
@@ -277,6 +278,7 @@ public class TelaVacina extends javax.swing.JFrame {
         txtValidade.setText(paciente.getValidade());
         txtLote.setText(paciente.getLote());
         txtData.setText(paciente.getData());
+        //txtNome.setText(User.getNome());
 
     }// GEN-LAST:event_tabelaPacientesMouseClicked
 

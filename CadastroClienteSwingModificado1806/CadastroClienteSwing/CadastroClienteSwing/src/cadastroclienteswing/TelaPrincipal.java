@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 import cadastrovacinaswing.TelaVacina;
 import telasaula.HomePage;
+import usuarioroot.User;
 
 /**
  *
@@ -24,6 +25,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
 	private DefaultTableModel modelo = new DefaultTableModel();
 	private IClienteDAO clienteDAO = new ClienteMapDAO();
+    
         private static TelaVacina instancia;
         private static HomePage newInstancia;
         public static HomePage getNewInstancia(){
@@ -292,6 +294,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		String user = txtUser.getText();
 		String senha = txtSenha.getText();
 		String setor = txtSetor.getText();
+        String name = txtNome.getText();
+        String personId = txtCPF.getText();
+        String id = txtRG.getText();
+        String section = txtSetor.getText();
+
+        
 
 		if (!isCamposValidos(nome, cpf)) {
 			JOptionPane.showMessageDialog(null, "Existem campos a serem preenchidos", "ATENÇÃO",
@@ -299,12 +307,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
 			return;
 		}
 
-		Cliente cliente = new Cliente(nome, cpf, cpf, null, cpf, null, null, rg, user, senha, setor);
+        User rootUser = new User(name, personId, id, section);
+		Cliente cliente = new Cliente(nome, cpf, null, null, null, null, null, rg, user, senha, setor);
 		Boolean isCadastrado = this.clienteDAO.cadastrar(cliente);
 
 		if (isCadastrado) {
-			modelo.addRow(new Object[] { cliente.getNome(), cliente.getCpf(), cliente.getRG(), cliente.getUser(),
-					cliente.getSenha(), cliente.getSetor() });
+			modelo.addRow(new Object[] { rootUser.getNome(), rootUser.getCpf(), rootUser.getRg(), cliente.getUser(),
+					cliente.getSenha(), rootUser.getSetor() });
 			limparCampos();
 		} else {
 			JOptionPane.showMessageDialog(null, "Cliente já se encontra cadastrado", "ATENÇÃO",
@@ -325,6 +334,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		txtUser.setText(cliente.getUser());
 		txtSenha.setText(cliente.getSenha());
 		txtSetor.setText(cliente.getSetor());
+        //txtNome.setText(user.getNome());
+        //txtCPF.setText(user.getCpf().toString());
+        //txtRG.setText(user.getRg());
+        //txtSetor.setText(user.getSetor());
 	}// GEN-LAST:event_tabelaClientesMouseClicked
 
 	private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnExcluirActionPerformed
