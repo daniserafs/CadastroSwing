@@ -308,11 +308,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		}
 
                 User rootUser = new User(name, id, personId, section);
-		Cliente cliente = new Cliente(nome, cpf, null, null, null, null, null, rg, user, senha, setor);
+		Cliente cliente = new Cliente(nome, cpf, rg, user, senha, setor);
 		Boolean isCadastrado = this.clienteDAO.cadastrar(cliente);
 
 		if (isCadastrado) {
-			modelo.addRow(new Object[] { rootUser.getNome(), rootUser.getCpf(), rootUser.getRg(), cliente.getUser(),
+			modelo.addRow(new Object[] { rootUser.getNome(), cliente.getCpf(), rootUser.getRg(), cliente.getUser(),
 					cliente.getSenha(), rootUser.getSetor() });
 			limparCampos();
 		} else {
@@ -327,7 +327,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		Long cpf = (Long) tabelaClientes.getValueAt(linhaSelecionada, 1);
 
 		Cliente cliente = this.clienteDAO.consultar(cpf);
-
+                //User rootUser = this.clienteDAO.consultar(cpf);
+                
 		txtNome.setText(cliente.getNome());
 		txtCPF.setText(cliente.getCpf().toString());
 		txtRG.setText(cliente.getRG());

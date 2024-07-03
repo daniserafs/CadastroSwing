@@ -15,25 +15,25 @@ public class Cliente {
     
     private String nome;
     private Long cpf;
-    private Long tel;
-    private String end;
-    private Integer numero;
-    private String cidade;
-    private String estado;
+    //private Long tel;
+    //private String end;
+    //private Integer numero;
+    //private String cidade;
+    //private String estado;
     private String rg;
     private String user;
     private String senha;
     private String setor;
 
     
-	public Cliente(String nome, String cpf, String tel, String end, String num, String cidade, String estado, String rg, String user, String senha, String setor) {
+	public Cliente(String nome, String cpf, String rg, String user, String senha, String setor) {
         this.nome = nome;
         this.cpf = Long.valueOf(cpf);
-        this.tel = Long.valueOf(tel);
-        this.end = end;
-        this.numero = Integer.valueOf(num);
-        this.cidade = cidade;
-        this.estado = estado;
+        //this.tel = Long.valueOf(tel);
+        //this.end = end;
+        //this.numero = Integer.valueOf(num);
+        //this.cidade = cidade;
+        //this.estado = estado;
         this.rg = rg;
         this.user = user;
         this.senha = senha;
@@ -80,7 +80,8 @@ public class Cliente {
     public void setCpf(Long cpf) {
         this.cpf = cpf;
     }
-
+    
+    /*
     public Long getTel() {
         return tel;
     }
@@ -120,6 +121,7 @@ public class Cliente {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+*/
     public String getRG() {
 		return rg;
 	}

@@ -27,11 +27,11 @@ public class HomePage extends javax.swing.JFrame {
         return instancia;
     }
     
-    private static TelaPrincipal newInstancia;
+    private static Login newInstancia;
     
-    public static TelaPrincipal getNewInstancia(){
+    public static Login getNewInstancia(){
         if(newInstancia == null) {
-            newInstancia = new TelaPrincipal();
+            newInstancia = new Login();
         }
         return newInstancia;
     }
