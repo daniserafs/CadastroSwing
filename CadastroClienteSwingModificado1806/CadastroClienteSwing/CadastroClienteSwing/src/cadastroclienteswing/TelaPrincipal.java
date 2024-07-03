@@ -294,10 +294,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		String user = txtUser.getText();
 		String senha = txtSenha.getText();
 		String setor = txtSetor.getText();
-        String name = txtNome.getText();
-        String personId = txtCPF.getText();
-        String id = txtRG.getText();
-        String section = txtSetor.getText();
+                String name = txtNome.getText();
+                String personId = txtCPF.getText();
+                String id = txtRG.getText();
+                String section = txtSetor.getText();
 
         
 
@@ -307,7 +307,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 			return;
 		}
 
-        User rootUser = new User(name, personId, id, section);
+                User rootUser = new User(name, id, personId, section);
 		Cliente cliente = new Cliente(nome, cpf, null, null, null, null, null, rg, user, senha, setor);
 		Boolean isCadastrado = this.clienteDAO.cadastrar(cliente);
 
@@ -335,7 +335,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		txtSenha.setText(cliente.getSenha());
 		txtSetor.setText(cliente.getSetor());
         //txtNome.setText(user.getNome());
-        //txtCPF.setText(user.getCpf().toString());
+        //txtCPF.setText(rootUser.getCpf().toString());
         //txtRG.setText(user.getRg());
         //txtSetor.setText(user.getSetor());
 	}// GEN-LAST:event_tabelaClientesMouseClicked

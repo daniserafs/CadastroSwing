@@ -1,15 +1,23 @@
 package usuarioroot;
 
+import java.util.Objects;
+
 public class Pessoa {
     private String nome;
     private String rg;
-    private String cpf;
+    private Long cpf;
     
     public Pessoa (String nome, String rg, String cpf) {
         this.nome = nome;
-        //this.cpf = Long.valueOf(cpf);
+        this.cpf = Long.valueOf(cpf);
         this.rg = rg;
-        this.cpf = cpf;
+        //this.cpf = cpf;
+    }
+    
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.cpf);
+        return hash;
     }
 
     public String getNome(){
@@ -26,11 +34,11 @@ public class Pessoa {
         this.rg = rg;
     }
 
-    public String getCpf(){
+    public Long getCpf(){
         return cpf;
     }
 
-    public void setCpf(String cpf){
+    public void setCpf(Long cpf){
         this.cpf = cpf;
     }
 
