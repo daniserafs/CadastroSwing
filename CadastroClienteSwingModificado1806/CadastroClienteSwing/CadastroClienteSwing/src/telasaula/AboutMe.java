@@ -4,7 +4,7 @@
  */
 package telasaula;
 
-import usuarioroot.TelaTeste;
+
 
 /**
  *
@@ -19,7 +19,6 @@ public class AboutMe extends javax.swing.JFrame {
         initComponents();
     }
     private static HomePage instancia;
-    private static TelaTeste newInstancia;
     
 
     /**
@@ -34,7 +33,6 @@ public class AboutMe extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -51,13 +49,6 @@ public class AboutMe extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jButton2.setText("TelaTeste");
-        jButton2.addActionListener(new java.awt.event.ActionListener(){
-            public void actionPerformed(java.awt.event.ActionEvent evt){
-                jButton2ActionPerformed(evt);
-            }
-        });
-        
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/telasaula/Imagem do WhatsApp de 2024-07-01 à(s) 18.30.09_38c21271 (1).jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -103,8 +94,6 @@ public class AboutMe extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addGap(252, 252, 252))
-                        //.addComponent(jButton2)
-                        .addGap(252, 252, 252)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(242, 242, 242))))
@@ -126,8 +115,6 @@ public class AboutMe extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addGap(35, 35, 35))
-                //.addComponent(jButton2)
-                .addGap(35, 35,35)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -165,10 +152,7 @@ public class AboutMe extends javax.swing.JFrame {
         AboutMe.getInstancia().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt){
-        this.dispose();
-        AboutMe.getNewInstancia().setVisible(true);
-    }
+   
 
     /**
      * @param args the command line arguments
@@ -207,7 +191,6 @@ public class AboutMe extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -228,12 +211,7 @@ public class AboutMe extends javax.swing.JFrame {
         }
         return instancia;
     }
-    public static TelaTeste getNewInstancia(){
-        if(newInstancia == null){
-            newInstancia = new TelaTeste();
-        }
-        return newInstancia;
-    }
+    
 
     /**
      * @param aInstancia the instancia to set
